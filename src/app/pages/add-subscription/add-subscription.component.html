@@ -1,0 +1,206 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/subscription">Subscription</a></li>
+          <li><span>Add Subscription</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="sub-head">
+          <div class="row">
+            <div class="col-md-5">
+              <h2>Add Subscription</h2>
+            </div>
+            <div class="col-md-7">
+              <div class="right-help">
+                <a routerLink="/subscription">View Subscription</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="add-sub-form">
+          <div class="add-sub-select">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Select Preferred Cloud Partner</label>
+                  <ng-select2>
+                    <option>Select Subscription</option>
+                    <option>AWS</option>
+                    <option>Google</option>
+                    <option>Azure</option>
+                  </ng-select2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aws-subs">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Subscription Name</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Application ID</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Secret Key</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Project</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Description</label>
+                    <textarea></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="sbm-btn">
+                <button type="button" class="clear-btn">Clear</button>
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="google-subs">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Subscription Name</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Project Id</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>API Key</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Service Key</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="sbm-btn">
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="azure-subs">
+            <form>
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Subscription Name</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Subscription ID</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Tenant ID</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Domain</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Application ID</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="form-group">
+                    <label>Secret Key</label>
+                    <input type="text" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="sbm-btn">
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="add-subs-footer">
+            <p>All fields are mandatory</p>
+          </div>
+        </div>
+        <div class="suggest-table">
+          <div class="row">
+            <div class="col-md-5">
+              <h3>Already Available Subscription</h3>
+            </div>
+            <div class="col-md-7">
+              <form class="suggest-srch">
+                <input type="tex" placeholder="Search subscription"><button><i class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+            </div>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Subscription Name</th>
+                <th scope="col" >Cloud Type</th>
+                <th scope="col" style="text-align: right;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Subscription name one</td>
+                <td>AWS</td>
+                <td style="text-align: right;"><span class="active">Active</span></td>
+              </tr>
+              <tr>
+                <td>Subscription name one</td>
+                <td>AWS</td>
+                <td style="text-align: right;"><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Subscription name one</td>
+                <td>AWS</td>
+                <td style="text-align: right;"><span class="active">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  

@@ -1,0 +1,125 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/organization-units">Organizational Unit</a></li>
+          <li><a routerLink="/manage-project">Manage Project</a></li>
+          <li><span>Edit Project Detail</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="edit-project-head">
+            <div class="row">
+              <div class="col-md-5">
+                <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i> BioHoldingInc / <span>Finance</span></h2>
+              </div>
+              <div class="col-md-7">
+                <div class="right-help">
+                  <a routerLink="/manage-project">View Projects</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-project-list">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link  active" href="#projectDetail" role="tab" data-toggle="tab" aria-selected="true"><i class="fa fa-info-circle" aria-hidden="true"></i> Details</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="projectDetail">
+                    <div class="edit-dtl-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Project Name</label>
+                                        <input type="text" value="Finance">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Alias/Nickname</label>
+                                        <input type="text" value="Alias/Nickname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Organization/Reference ID</label>
+                                        <input type="text" value="Rd11233338">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Project Name</label>
+                                        <Textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-tag">
+                                <h2><button>Add New Tag</button></h2>
+                                <div class="add-tag-box">
+                                  <div class="tag-row">
+                                    <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tag-row">
+                                    <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="tag-row">
+                                    <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tex" placeholder="Tag Value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="sbm-btn">
+                                <button class="left-btn" type="button">Cancel</button>
+                                <button class="right-btn" type="button">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-footer"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+<app-footer></app-footer>

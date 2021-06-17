@@ -1,0 +1,8 @@
+.barBox{
+    background-color: white;
+}
+
+.project-detail-chart-wrapper canvas{
+    height:300px!important;
+    width:70%!important;
+}

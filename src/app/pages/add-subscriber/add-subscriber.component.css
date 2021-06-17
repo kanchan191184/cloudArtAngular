@@ -1,0 +1,33 @@
+.selectSalutation select
+{
+    border:1px solid #d4d4d4; 
+    border-radius:2px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    background: #f3f3f3;
+}
+
+.selectSalutation select:focus{
+
+    outline: none; 
+    border: 1px solid #16A091;
+    background-color: #ffff;
+}
+
+.selectRole {
+    border:1px solid #d4d4d4; 
+    border-radius:2px;
+    padding-top: 7px;
+    padding-bottom: 7px;   
+    background: #f3f3f3;
+    width:100%;
+}
+
+.selectRole:focus{
+
+    outline: none; 
+    border: 1px solid #16A091;
+    background-color: #ffff;
+}
+
+dp-date-picker .dp-input-container { width: 100%; display: block;}

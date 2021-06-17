@@ -1,0 +1,31 @@
+.pagination a {
+    border-radius:50%;
+    background-color: darkgrey;
+    color:black;
+    /* padding-top:1px;
+    padding-bottom:1px; */
+    margin-right:6px;
+    margin-left:6px;
+}
+
+.page-link {
+    padding: .2rem .5rem;
+}
+
+.subscription-box input[type=text] {
+    max-width: 180px;
+  }
+
+.btnOptions{
+    background-color: transparent !important;
+    color:grey !important;
+    border:1px solid lightgrey;
+    padding-left:65px;
+    padding-right:65px;
+}
+
+.btn {
+    background-color: #1BABB4;
+    color: #ffff;
+    margin:10px;
+}

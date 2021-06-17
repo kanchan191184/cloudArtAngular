@@ -1,0 +1,20 @@
+
+
+
+  option[value=""][disabled] {
+    display: none;
+    color:lightgray;
+  }
+
+
+
+
+
+.stepper-form-sec .refreshDeploy .btn{
+    margin-top:20px;
+padding: 10px;
+color:#ffff;
+background-color:#16A091;
+font-size: 14px;
+/* width: 50px; */
+}

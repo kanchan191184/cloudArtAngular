@@ -1,0 +1,272 @@
+<app-header></app-header>
+<div class="inner-body">
+  <app-sidebar-menu></app-sidebar-menu>
+  <div class="container-fluid">
+    <div class="breadcramb-nav">
+      <ul>
+        <li><a routerLink="/dashboard">Home</a></li>
+        <li><a routerLink="/organization-units">Market Place</a></li>
+        <li><span>Deploy</span></li>
+      </ul>
+    </div>
+    <div class="body-content">
+      <div class="stepper-head">
+        <div class="row">
+          <div class="col-md-5">
+            <h2>Deploy</h2>
+          </div>
+          <div class="col-md-7">
+            <div class="right-help">
+              <a routerLink="/organization-units">Designer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stepper-row">
+        <aw-wizard>
+          <aw-wizard-step stepTitle="Select">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <form>
+              <div class="stepper-form-sec">
+                <div class="row form-row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Name of the Template*</label>
+                      <input type="text" placeholder="Name of the Template">
+                    </div>
+                  </div>
+                  <div class="col-md-6 stepper-dropdown">
+                    <div class="form-group">
+                      <label>Organization*</label>
+                      <select>
+                        <option value="" disabled selected>Organization</option>
+                        <option>Org1</option>
+                        <option>Org2</option>
+                        <option>Org3</option>
+                        <option>Org4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 stepper-dropdown">
+                    <div class="form-group">
+                      <label>Select Project</label>
+                      <select>
+                        <option value="" disabled selected>Select Project</option>
+                        <option>Select Project1</option>
+                        <option>Select Project2</option>
+                        <option>Select Project3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 stepper-dropdown">
+                    <div class="form-group">
+                      <label>Select Cloud Type*</label>
+                      <select>
+                        <option value="" disabled selected>Select Cloud Type</option>
+                        <option>Select Cloud Type</option>
+                        <option>Select Cloud Type1</option>
+                        <option>Select Cloud Type2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 stepper-dropdown">
+                    <div class="form-group">
+                      <label>Select Subscription*</label>
+                      <select>
+                        <option value="" disabled selected>Select Subscription</option>
+                        <option>Select subscription1</option>
+                        <option>Select subscription2</option>
+                        <option>Select subscription3</option>
+                        <option>Select subscription4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sbm-btn">
+                <button class="left-btn" type="button">Cancel</button>
+                <button class="right-btn" type="button" awNextStep>Next</button>
+              </div>
+            </form>
+          </aw-wizard-step>
+          <aw-wizard-step stepTitle="Configuration" awOptionalStep>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <form>
+              <div class="col-md-12 add-tag">
+                <div class="row pt-3">
+                    <a class="btn btnCollapse py-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                      aria-controls="collapseExample">
+                      Virtual Machine
+                    </a>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">OS Type</th>
+                            <th scope="col">IP Address</th>
+                            <th scope="col">OS Version</th>
+                            <th scope="col">Machine Family</th>
+                            <th scope="col">Processor Memory</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">InstanceType</th>
+                            <th scope="col">TypeOfMachine</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="row">
+                        <div class="col-md-1 tagsInput">
+                          <div class="form-group">
+                            <label>Tags for</label>
+                            <input type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2 tagsInput">
+                          <label>Caching Rules for</label>
+                          <select>
+                            <option></option>
+                            <option>One</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                            <option>Four</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-3">
+                    <a class="btn btnCollapse" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                      aria-controls="collapseExample">
+                      Disk
+                    </a>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Disk Size</th>
+                            <th scope="col">Disk IOPS</th>
+                            <th scope="col">Disk Purpose</th>
+                            <th scope="col">Disk Type</th>
+                            <th scope="col">Disk Location</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="row">
+                        <div class="col-md-2 tagsInput">
+                          <label>Disk Caching for</label>
+                          <select>
+                            <option></option>
+                            <option>one</option>
+                            <option>two</option>
+                            <option>three</option>
+                            <option>four</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1 tagsInput">
+                          <div class="form-group">
+                            <label>Tags for</label>
+                            <input type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-5">
+                  <!-- <div class="col-md-7 tagsButton"> -->
+                    <!-- <a routerLink="/" class="link1">OUTags</a>
+                    <a routerLink="/" class="link1">ProjectTags</a> -->
+                  <!-- </div> -->
+                </div>
+
+              </div>
+              <div class="sbm-btn">
+                <button class="left-btn" type="button" awPreviousStep>Back</button>
+                <!-- <div class="col-md-7 tagsButton"> -->
+                <!-- <button class="left-btn" routerLink="/" type="button">OUTags</button>
+                <button routerLink="/" class="left-btn">ProjectTags</button> -->
+                <!-- </div> -->
+                <button class="right-btn" type="button" awNextStep>Next</button>
+
+              </div>
+            </form>
+          </aw-wizard-step>
+          <aw-wizard-step stepTitle="Review and Create" awOptionalStep>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <form>
+              <div class="stepper-form-sec ml-3">
+                <div class="row">
+                  <div class="col-md">
+                    <p class="deployText1">Congratulations,Validations Passed and You are almost done</p>
+                  </div>
+                </div>
+                <div class="row pt-2">
+                  <div class="col-md">
+                    <p class="deployText1">Click on Deploy Button to Deploy "aws365463" on Azure</p>
+                    <p class="deployText3">Cost Comparison acc. to different Clouds</p>
+                  </div>
+                </div>
+                <div class="row pt-3">
+                  <div class="col-md deployText4">
+                    <p>AWS:0</p>
+                    <p>Azure:0</p>
+                    <p>Google:0</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1 refreshDeploy">
+                    <!-- <button type="button" class="btn" awResetWizard>Refresh</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="sbm-btn">
+                <button class="left-btn" type="button" awPreviousStep>Back</button>
+                <button class="left-btn" type="button">Cancel</button>
+                <button type="button" class="left-btn" awResetWizard>Refresh</button>
+                <button class="right-btn" type="button" awNextStep>Submit</button>
+              </div>
+            </form>
+          </aw-wizard-step>
+        </aw-wizard>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,77 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/subscription">Organizational Unit</a></li>
+          <li><a routerLink="/manage-project">Manage Project</a></li>
+          <li><a routerLink="/project-settings">Project Settings</a></li>
+          <li><span>Add Project Subscription</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="project-subscription-head">
+            <div class="row">
+              <div class="col-md-5">
+                <h2>Add Project Subscription</h2>
+              </div>
+              <div class="col-md-7">
+                <div class="right-help">
+                  <a routerLink="/project-settings">Project Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-project-subscription">
+            <div class="project-subscription-form">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Organization</label>
+                                <input type="text" value="BioHoldingInc" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Project</label>
+                                <input type="text" value="Finance" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Cloud Type</label>
+                                <ng-select2>
+                                  <option>Select Cloud</option>
+                                  <option>AWS</option>
+                                  <option>Azure</option>
+                                  <option>Google</option>
+                                </ng-select2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Subscriptions</label>
+                                <ng-select2>
+                                    <option>Select Subscriptions</option>
+                                    <option>Subscriptions </option>
+                                    <option>Subscriptions</option>
+                                    <option>Subscriptions</option>
+                                </ng-select2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sbm-btn">
+                        <button class="left-btn" type="button">Cancel</button>
+                        <button class="right-btn" type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-footer"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+<app-footer></app-footer>

@@ -1,0 +1,27 @@
+.left-side { position: relative; height: 100%;box-shadow:10px 0 5px -2px rgba(0,0,0,0.2); padding-top:2px; z-index: 99; }
+.left-side .position-nav { position: fixed; width: 260px; z-index: 999; margin-top: 10px; }
+.left-side .sidebar.fliph .position-nav { width: 42px; }
+.sidebar{ width:260px;  background-color:#f3f8fb;transition: all 0.5s  ease-in-out; height: 100%; }
+/* .left-side button.button-left { position: fixed; top:6px; left:150px; z-index: 999;} */
+.sidebar ul{ list-style:none; margin:0px; padding:0px; }
+.sidebar li { position: relative; margin-bottom:15px;}
+.sidebar li a,
+.sidebar li a.collapsed.active{ display:block; padding:8px 12px; border-left:0px solid #dedede;  text-decoration:none; color: #161616; background: #f3f8fb; font-size: 18px; font-weight:400; }
+.sidebar li a.active{background-color:#000;border-left:5px solid #dedede; }
+.sidebar li a:focus { font-weight: 700; background:#16A091; color: #fff;}
+.sidebar li a:focus .fa { color: #fff;}
+.sidebar li a:hover{background: #16A091; color: #fff;}
+.sidebar li a i {font-size:18px; color: #16A091; width:23px;}
+.sidebar li a:hover .fa { color: #fff;}
+.sidebar.fliph li a .nav-label,.sidebar.fliph li a .nav-label+span{ display:none;transition: all 0.5s  ease-in-out}
+.sidebar.fliph { width: 42px;transition: all 0.5s  ease-in-out;}	
+.sidebar.fliph li{ position:relative}
+.fliph .user-panel{ display: none; }
+.sidebar .dropdown-menu.show { position: relative !important; transform: translate3d(0px, 0px, 0px) !important; width: 100%; padding: 0 10px 0 20px; box-shadow: none; border: none; border-radius: 0; margin-bottom: 10px; margin-top: 0;}
+.sidebar .dropdown-menu.show a.dropdown-item { padding: 5px 10px; margin-bottom:5px; font-size: 15px; background: none; border-left: 1px solid #f3f3f3; font-weight:400;}
+.sidebar .dropdown-menu.show a.dropdown-item .fa {width:20px;}
+.sidebar .dropdown-menu.show a.dropdown-item:hover { background: #16A091; }
+.sidebar .dropdown-menu.show a.dropdown-item:hover .fa { color: #fff;}
+.sidebar .fa.pull-right { margin-top: 4px; }
+.left-side .sidebar.fliph .dropdown-menu.show  { width: 180px; border: 1px solid #ccc;}
+

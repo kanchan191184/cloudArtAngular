@@ -1,0 +1,262 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/organization-units">Organization Unit</a></li>
+          <li><span>Add Organization</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="add-org-head">
+          <div class="row">
+            <div class="col-md-5">
+              <h2>Add Organization Unit</h2>
+            </div>
+            <div class="col-md-7">
+              <div class="right-help">
+                <a routerLink="/organization-units">View Organization</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="add-org-row">
+          <aw-wizard>
+            <aw-wizard-step stepTitle="Organization Form">
+              <form>
+                <div class="org-form-sec">
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label>Organization Name</label>
+                        <input type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                      <label>Alias/Nickname</label>
+                      <input type="text" placeholder="">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                    <label>Organization/Reference ID</label>
+                    <input type="text" placeholder="">
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label>Description</label>
+                          <textarea></textarea>
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="admin-table">
+                    <div class="admin-header">
+                      <div class="row">
+                        <!-- <div class="col-md-5">
+                          <h2>Select Administrator(s)</h2>
+                        </div> -->
+                        <div class="col-md-12">
+                          <div class="admin-right">
+                            <div class="search-admin">
+                              <input type="text" placeholder="Select Administrator(s)..">
+                              <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="admin-table-height">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="width: 30px;"></th>
+                            <th scope="col" >Name</th>
+                            <th scope="col">Email</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="admin-txt">
+                                <p><img src="assets/images/profile-icon.png">Admin Name</p>
+                              </div>
+                            </td>
+                            <td>info@cloudartinc.com</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="sbm-btn">
+                  <button class="left-btn" type="button">Cancel</button>
+                  <button class="right-btn" type="button" awNextStep>Next</button>
+                </div>
+              </form>
+            </aw-wizard-step>
+            <aw-wizard-step stepTitle="Tags" awOptionalStep>
+              <form>
+                <div class="add-tag">
+                    <h2><button>Add New Tag</button></h2>
+                    <div class="add-tag-box">
+                      <div class="tag-row">
+                        <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Value">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tag-row">
+                        <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Value">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tag-row">
+                        <button class="delete-tag"><i aria-hidden="true" class="fa fa-trash-o"></i></button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tex" placeholder="Tag Value">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="sbm-btn">
+                  <button class="left-btn" type="button" awPreviousStep>Back</button>
+                  <button class="right-btn" type="button" awNextStep>Submit</button>
+                </div>
+              </form>
+            </aw-wizard-step>
+          </aw-wizard>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
+  

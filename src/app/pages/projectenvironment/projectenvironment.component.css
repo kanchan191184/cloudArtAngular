@@ -1,0 +1,10 @@
+
+.project-environment-piechart-wrapper canvas {
+    height:250px!important; 
+    width:400px!important;
+    margin-top:40px;
+     margin-left:29%;
+     background-color: #EFF0E9;
+     padding-top: 20px;
+     padding-bottom: 40px;
+}

@@ -1,0 +1,178 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/organization-units">Organization Units</a></li>
+          <li><span>Manage Projects</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="org-project-heading">
+          <h2>Manage Projects</h2>
+        </div>
+        <div class="org-project-row">
+            <div class="org-project-dtl">
+                <ul>
+                    <li><strong>Organization : </strong><span>BioHoldingInc</span></li>
+                    <li><strong>Deployed On : </strong><span>AWS,Azure,Google Cloud</span></li>
+                    <li><strong>Total Cost : </strong><span>$ 14000.50</span></li>
+                </ul>
+            </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="org-project-left">
+                <div class="download-btn">
+                  <a routerLink="/add-project"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a>
+                  <button><i class="fa fa-download" aria-hidden="true"></i>Export to CSV</button>
+                  <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Export to PDF</button>
+                  <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                </div>
+                <div class="serch-box">
+                  <input type="text" placeholder="Text..">
+                  <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="org-project-box">
+            <div class="fix-table-header" id="table-cont">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                    <th>Project Name</th>
+                    <th>Deployed on</th>
+                    <th>Total Cost</th>
+                    <th style="text-align: center;">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>DevEnvOU</td>
+                    <td>AWS,Azure,Google Cloud</td>
+                    <td>$ 1006</td>
+                    <td>
+                      <div class="user-action">
+                        <a routerLink="/project-settings"><button type="button" class="setting" title="Project Settings"><i class="fa fa-cog" aria-hidden="true"></i></button></a>
+                        <a routerLink="/edit-project"><button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-10 ml-2 mt-2" style="margin-top:5px;">
+            <p style="font-weight:600;">Showing 10 items</p>
+          </div>
+        <div class="col-md mt-2" style="margin-top:5px;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

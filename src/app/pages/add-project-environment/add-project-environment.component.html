@@ -1,0 +1,95 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/subscription">Organizational Unit</a></li>
+          <li><a routerLink="/manage-project">Manage Project</a></li>
+          <li><a routerLink="/project-settings">Project Settings</a></li>
+          <li><span>Add Project Environment</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="project-environment-head">
+            <div class="row">
+              <div class="col-md-5">
+                <h2>Add Project Environment</h2>
+              </div>
+              <div class="col-md-7">
+                <div class="right-help">
+                  <a routerLink="/project-settings">Project Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-project-environment">
+            <div class="project-environment-table">
+                <form>
+                        <div class="environment-header">
+                          <button>Add Environment</button>
+                        </div>
+                        <div class="environment-table-height">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 40px;">S.NO.</th>
+                                <th scope="col" >Name</th>
+                                <th scope="col">Alias</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Description</th>
+                                <th scope="col" style="width: 100px; text-align: center;">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td><input type="text" value="Development" placeholder=""></td>
+                                <td><input type="text" value="Dev" placeholder="Enter Alias"></td>
+                                <td>
+                                  <ng-select2>
+                                    <option>Development</option>
+                                    <option>Test</option>
+                                    <option>Staging</option>
+                                    <option>Production</option>
+                                    <option>QA</option>
+                                    <option>Pre-Production</option>
+                                  </ng-select2>
+                                </td>
+                                <td><textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</textarea></td>
+                                <td style="text-align: center;"><button class="dlt-env"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td><input type="text" placeholder="Enter Name"></td>
+                                <td><input type="text" placeholder="Enter Alias"></td>
+                                <td>
+                                  <ng-select2>
+                                    <option>Select environment</option>
+                                    <option>Development</option>
+                                    <option>Test</option>
+                                    <option>Staging</option>
+                                    <option>Production</option>
+                                    <option>QA</option>
+                                    <option>Pre-Production</option>
+                                  </ng-select2>
+                                </td>
+                                <td><textarea placeholder="Description.."></textarea></td>
+                                <td style="text-align: center;"><button class="dlt-env"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    <div class="sbm-btn">
+                        <button class="left-btn" type="button">Cancel</button>
+                        <button class="right-btn" type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="edit-footer"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+<app-footer></app-footer>

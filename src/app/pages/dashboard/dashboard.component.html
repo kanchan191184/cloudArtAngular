@@ -1,0 +1,342 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="body-content pt-1">
+        <div class="heading-sec">
+        </div>
+        <div class="dashboard-top">
+        </div>
+        <div class="dashboard-head">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 dashboard-head-outer">
+              <div class="dashboard-head-box red">
+                <ul>
+                  <li>
+                    <h3><strong>Total Organizations</strong><span>125</span></h3>
+                  </li>
+                  <li style="float:left; width:80px">
+                    <div class="analytics-icon">
+                      <h5><i class="fa fa-building-o" aria-hidden="true"></i></h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 dashboard-head-outer">
+              <div class="dashboard-head-box green">
+                <ul>
+                  <li>
+                    <h3><strong>Total Subscriptions</strong><span>95</span></h3>
+                  </li>
+                  <li style="float:left;width:80px">
+                    <div class="analytics-icon">
+                      <h5><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 dashboard-head-outer">
+              <div class="dashboard-head-box sky">
+                <ul>
+                  <li>
+                    <h3 class="pl-2"><strong>Total Resources</strong><span>105</span></h3>
+                  </li>
+                  <li style="float:left;width:80px">
+                    <div class="analytics-icon">
+                      <h5><i class="fa fa-microchip" aria-hidden="true"></i></h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 dashboard-head-outer">
+              <div class="dashboard-head-box purple">
+                <ul>
+                  <li>
+                    <h3 class="pl-3"><strong>Total Projects</strong><span>111</span></h3>
+                  </li>
+                  <li style="float:left;width:80px">
+                    <div class="analytics-icon">
+                      <h5><i class="fa fa-tasks" aria-hidden="true"></i></h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 dashboard-head-cloud">
+              <div class="dashboard-head-box blue">
+                 <div class="col-md-12 dashboard-top-right my-1">
+                  <span class="mx-2" style="color:#16A091; font-weight:700;">Cloud</span>
+                  <label><input type="radio" class="radio-inline" name="radios" value="" checked><span class="outside"><span class="inside"></span></span>All</label>
+                  <label><input type="radio"class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>AWS</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Azure</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Google</label>  
+                 </div>
+                <div class="col-md-12 dashboard-top-right-down my-1">
+                  <span class="mx-2" style="color:#16A091; font-weight:700;">Time</span>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outsideTime"><span class="insideTime"></span></span>Half Yearly</label>
+                  <label><input type="radio"class="radio-inline" name="radios" value=""><span class="outsideTime"><span class="insideTime"></span></span>Quarterly</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outsideTime"><span class="insideTime"></span></span>Monthly</label>  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="chart-row mt-0">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Kanchan -->
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="graph-box" style="height:220px;">
+                    <div class="graph-header smallChart">
+                      <h4>Top 5 Projects<span><a routerLink= "/project-details">Details</a></span></h4>
+                    </div>
+ 
+                    <div class="project-doughnutchart-wrapper">
+                      <canvas baseChart 
+                      [data]="projectdoughnutChartData"
+                      [labels]="projectdoughnutChartLabels"
+                      [options]="projectdoughnutChartOptions"
+                      [colors]="projectdoughnutChartColors" 
+                      [chartType]="projectdoughnutChartType">
+                    </canvas>
+                  </div>
+
+                    <div class="graph-footer">
+                      <!-- <h5>Top 5 Organizations</h5> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="graph-box" style="height:220px;">
+                    <div class="graph-header smallChart">
+                      <h4>Top 5 Resources<span><a href="#">Details</a></span></h4>
+                    </div>
+                    <div class="resources-doughnutchart-wrapper">
+                      <canvas baseChart 
+                      [data]="resourcesdoughnutChartData"
+                      [labels]="resourcesdoughnutChartLabels"
+                      [options]="resourcesdoughnutChartOptions"
+                      [colors]="resourcesdoughnutChartColors" 
+                      [chartType]="resourcesdoughnutChartType">
+                    </canvas>
+                  </div>
+                    <div class="graph-footer">
+                      <!-- <h5>Top 5 Organizations</h5> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="graph-box" style="height:220px;">
+                    <div class="graph-header smallChart">
+                      <h4>Total Cost<span><a href="#">Details</a></span></h4>
+                    </div>
+
+                    <div class="total-cost-piechart-wrapper">
+                      <canvas baseChart 
+                      [data]="pieChartData" 
+                      [labels]="pieChartLabels" 
+                      [chartType]="pieChartType"
+                      [options]="pieChartOptions"
+                      [plugins]="pieChartPlugins"
+                      [legend]="pieChartLegend">
+                    </canvas>
+                  </div>
+
+                    <div class="graph-footer">
+                      <!-- <h5>Top 5 Organizations</h5> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="graph-box" style="height:220px;">
+                    <div class="graph-header smallChart">
+                      <h4>Cloud Based Cost<span><a href="#">Details</a></span></h4>
+                    </div>
+                    <div class="cloud-cost-piechart-wrapper">
+                      <canvas baseChart 
+                      [data]="cloudpieChartData" 
+                      [labels]="cloudpieChartLabels" 
+                      [chartType]="cloudpieChartType"
+                      [options]="cloudpieChartOptions"
+                      [plugins]="cloudpieChartPlugins"
+                      [legend]="cloudpieChartLegend">
+                    </canvas>
+                  </div>
+
+                    <div class="graph-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="graph-box" style="height:250px!important">
+                <div class="graph-header smallChart">
+                  <h4>Organizations <span><a routerLink="/organization-details">Details</a></span></h4>
+                </div>
+                <div class="organization-chart-wrapper">
+                  <canvas baseChart 
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [plugins]="barChartPlugins"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType">
+                </canvas>
+              </div>
+
+                <div class="graph-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="graph-box" style="height:250px!important">
+                <div class="graph-header smallChart">
+                  <h4>Consumption Trend <span><a href="#">Details</a></span></h4>
+                </div>
+                <div class="consumption-trend-linechart-wrapper">
+                  <canvas baseChart 
+                      [datasets]="lineChartData" 
+                      [labels]="lineChartLabels" 
+                      [options]="lineChartOptions"
+                      [colors]="lineChartColors" 
+                      [legend]="lineChartLegend" 
+                      [chartType]="lineChartType" 
+                      [plugins]="lineChartPlugins">
+                  </canvas>
+              </div>
+
+                <div class="graph-footer">
+                </div>
+              </div>
+            </div>
+           
+
+            <div class="col-md-5">
+              <div class="graph-box" style="height:250px">
+                <div class="graph-header">
+                  <h4>Billing Information<span><a href="#">Details</a></span></h4>
+                </div>
+                <div class="row mx-0 mt-2">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">OU Name</th>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Payment Date</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td>Paid</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td>Paid</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td style="color:red;">Due</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td  colspan="5" style="text-align: end; font-weight: 600;">Total Records: 10</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+                <div class="graph-footer">
+                  <!-- <h5>Top 5 Organizations</h5> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="graph-box" style="height:250px">
+                <div class="graph-header">
+                  <h4>My approval<span><a href="#">Details</a></span></h4>
+                </div>
+                <div class="row mx-0 mt-2">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Activity</th>
+                      <th scope="col">Requested By</th>
+                      <th scope="col">Request Date</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td>Paid</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td>Paid</td>
+                    </tr>
+                    <tr>
+                      <td>Amazon ID</td>
+                      <td>Amazon ID</td>
+                      <td>12-May-2019</td>
+                      <td style="color:red;">Due</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <!-- <tr>
+                      <td  colspan="5" style="text-align: end; font-weight: 600;">Total Records: 10</td>
+                    </tr> -->
+                  </tfoot>
+                </table>
+              </div>
+                <div class="graph-footer">
+                  <!-- <h5>Top 5 Organizations</h5> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="graph-box" style="height:250px">
+                <div class="graph-header smallChart">
+                  <h4>My Latest Activity</h4>
+                </div>
+                <div class="wrapper">
+                  <ul class="StepProgress">
+                    <li class="StepProgress-item"><strong><i class="fa fa-circle-o pr-2" aria-hidden="true"></i>  Added Subscriber</strong></li>
+                    <li class="v1"></li>
+                    <li class="StepProgress-item"><strong><i class="fa fa-circle-o pr-2" aria-hidden="true"></i>  Created Project</strong></li>
+                    <li class="v1"></li>
+                    <li class="StepProgress-item"><strong><i class="fa fa-circle-o pr-2" aria-hidden="true"></i>  Project Mapping</strong></li>
+                    <li class="v1"></li>
+                    <li class="StepProgress-item"><strong><i class="fa fa-circle-o pr-2" aria-hidden="true"></i>  Added Subscriber</strong></li>
+                  </ul>
+                  </div>
+                <div class="graph-footer">
+                  <!-- <h5>Top 5 Organizations</h5> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>

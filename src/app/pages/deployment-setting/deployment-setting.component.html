@@ -1,0 +1,283 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/subscription">Subscription</a></li>
+          <li><span>Deployment Settings</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="deployment-head">
+            <div class="row">
+              <div class="col-md-5">
+                <h2>Deployment Settings</h2>
+              </div>
+              <div class="col-md-7">
+                <div class="right-help">
+                  <a routerlink="/subscription">View Subscription</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deployment-row">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link  active" href="#defaultZones" role="tab" data-toggle="tab" aria-selected="true">Default Zones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#userCredential" role="tab" data-toggle="tab">Credentials</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="title-dpl">
+                    <h2>Azure Test Subcription</h2>
+                </div>
+                <div class="tab-pane active" id="defaultZones">
+                    <div class="zone-section">
+                        <form>
+                            <div class="mid-contnet">
+                                <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Region</th>
+                                        <th scope="col" style="text-align: center;">Primary Zone</th>
+                                        <th scope="col" style="text-align: center;">Primary Zone</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>US NorthEast</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>US SouthEast</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>US NorthCentral</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>US South Central</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>US NorthWest</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>US SouthWest</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Canada East</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Canada Central</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>APAC south</td>
+                                        <td> 
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                        <td>
+                                            <ng-select2>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                            </ng-select2>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="sbm-btn">
+                                <button type="button" class="clear-btn">Clear</button>
+                                <button type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="userCredential">
+                    <div class="credential-section">
+                      <div class="credential-header">
+                        <div class="download-btn">
+                          <a routerLink="/add-credential"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a>
+                          <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                        </div>
+                        <div class="serch-box">
+                          <input type="text" placeholder="Text..">
+                          <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                      <div class="user-list">
+                          <div class="fix-table-header" id="table-cont">
+                              <table class="table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                                    <th>Credential Name</th>
+                                    <th>OS Type</th>
+                                    <th>Description</th>
+                                    <th style="text-align: center;">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>User name</td>
+                                    <td>Linux</td>
+                                    <td>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>User name</td>
+                                      <td>Linux</td>
+                                      <td>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</td>
+                                      <td>
+                                        <div class="user-action">
+                                          <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                          <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>User name</td>
+                                      <td>Linux</td>
+                                      <td>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</td>
+                                      <td>
+                                        <div class="user-action">
+                                          <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                          <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>User name</td>
+                                      <td>Linux</td>
+                                      <td>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</td>
+                                      <td>
+                                        <div class="user-action">
+                                          <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                          <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deployment-footer"> 
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  

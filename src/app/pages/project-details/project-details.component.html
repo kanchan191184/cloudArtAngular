@@ -1,0 +1,121 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="body-content pt-1">
+        
+        <div class="project-Details-top">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="project-Details-top-left">
+                  <h5>Click on the project chart to view all the Projects</h5>
+                 </div>
+              </div>
+              <div class="col-md-8">
+                <div class="project-Details-top-right">
+                  <label><input type="radio" class="radio-inline" name="radios" value="" checked><span class="outside"><span class="inside"></span></span>All</label>
+                  <label><input type="radio"class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>AWS</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Azure</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Google</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Half Yearly</label>
+                  <label><input type="radio"class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Quarterly</label>
+                  <label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span class="inside"></span></span>Monthly</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-chart-row mt-0">
+          <div class="col-md-12">
+              <div class="project-graph-box" style="height:400px">
+                <div class="project-graph-header">
+                  <div class="row">
+                  <div class="col-md-8">
+                    <h4>Project Details</h4>
+                 </div>
+                 <div class="col-md-4 headerRight">
+                  <button class="btn btnColor" routerLink= "/projectenvironment">View All Environments</button>
+                  <button class="btn btnColor" routerLink= "/organization-details">View All Organizations</button>
+                  <button class="btn btn-outline" routerLink= "/dashboard">Back to DashBoard</button>
+               </div>
+              </div>
+                </div>
+                <div class="project-detail-chart-wrapper mt-4">
+                  <canvas baseChart 
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [plugins]="barChartPlugins"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType">
+                </canvas>
+              </div>
+                
+                <div class="projectgraph-footer">
+                </div>
+              </div>
+            </div>
+            
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 project-search-text">
+                <h3>Available Organizations Projects</h3>
+              </div>
+              <div class="col-md-7 project-search">
+                <form class="suggest-srch">
+                  <input type="tex" placeholder="Search Projects"><button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="project-table-row justify-content-center">
+              <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Organization Name</th>
+                    <th>Cost(In $)</th>
+                    <th class="text-center">Consumption</th>
+                    <th class="text-center">View Insights</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amazon</td>
+                    <td>200</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">94%</div>
+                      </div>
+                    </td>
+                    <td class="textRight"><a href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>AWS</td>
+                    <td>400</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="textRight"><a href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>SAIL</td>
+                    <td>500</td>
+                    <td>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">64%</div>
+                      </div>
+                    </td>
+                    <td class="textRight"><a href="#">View</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

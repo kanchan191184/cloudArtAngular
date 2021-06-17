@@ -1,0 +1,356 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><a routerLink="/subscription">Organizational Unit</a></li>
+          <li><a routerLink="/manage-project">Manage Project</a></li>
+          <li><span>Project Settings</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="edit-project-head">
+            <div class="row">
+              <div class="col-md-5">
+                <h2><i aria-hidden="true" class="fa fa-cog"></i> BioHoldingInc / <span>Finance</span></h2>
+              </div>
+              <div class="col-md-7">
+                <div class="right-help">
+                  <a href="#">View Projects</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-project-list">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#orgSubscription" role="tab" data-toggle="tab"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Subscriptions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#orgSubscriber" role="tab" data-toggle="tab"><i class="fa fa-users" aria-hidden="true"></i> Subscribers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#orgEnvironment" role="tab" data-toggle="tab"><i class="fa fa-database" aria-hidden="true"></i> Environment</a>
+                  </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="orgSubscription">
+                    <div class="org-subscription-row">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="org-subscription-left">
+                              <div class="download-btn">
+                                <a routerLink="/add-project-subscription"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a>
+                                <button><i class="fa fa-download" aria-hidden="true"></i>Export to CSV</button>
+                                <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Export to PDF</button>
+                                <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                              </div>
+                              <div class="serch-box">
+                                <input type="text" placeholder="Text..">
+                                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="org-subscription-list">
+                          <div class="fix-table-header" id="table-cont">
+                            <table class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                                  <th>Subscriptions</th>
+                                  <th>CloudType</th>
+                                  <th>Created Date</th>
+                                  <th style="text-align: center;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>DevEnvOU</td>
+                                  <td>AWS</td>
+                                  <td>15/05/2020</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>DevEnvOU</td>
+                                  <td>AWS</td>
+                                  <td>15/05/2020</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>DevEnvOU</td>
+                                  <td>AWS</td>
+                                  <td>15/05/2020</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>DevEnvOU</td>
+                                  <td>AWS</td>
+                                  <td>15/05/2020</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>DevEnvOU</td>
+                                  <td>AWS</td>
+                                  <td>15/05/2020</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="orgSubscriber">
+                    <div class="org-subscriber-row">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="org-subscriber-left">
+                              <div class="download-btn">
+                                <!-- <a routerLink="/add-project-subscriber"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a> -->
+                                <button id="projectUser"><i class="fa fa-plus" aria-hidden="true"></i>Add</button>
+                                <button><i class="fa fa-download" aria-hidden="true"></i>Export to CSV</button>
+                                <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Export to PDF</button>
+                                <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                              </div>
+                              <div class="serch-box">
+                                <input type="text" placeholder="Text..">
+                                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="add-project-user">
+                                <span class="icon-top"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                                <form>
+                                  <div class="form-group">
+                                    <label>Subscriber</label>
+                                    <ng-select2>
+                                      <option>Subscriber One</option>
+                                      <option>Subscriber two</option>
+                                      <option>Subscriber three</option>
+                                      <option>Subscriber four</option>
+                                      <option>Subscriber five</option>
+                                    </ng-select2>
+                                    <button type="button" id="close-prjctUser">Submit</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="org-subscriber-list">
+                          <div class="fix-table-header" id="table-cont">
+                            <table class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                                  <th>Organization</th>
+                                  <th>Project</th>
+                                  <th>Cloud Type</th>
+                                  <th>Subscriptions</th>
+                                  <th>Subscribers</th>
+                                  <th style="text-align: center;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>BioHoldingInc</td>
+                                  <td>Finance</td>
+                                  <td>Aws</td>
+                                  <td>fin-aws (Test)</td>
+                                  <td>Harshit Singhal</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>BioHoldingInc</td>
+                                  <td>Finance</td>
+                                  <td>Aws</td>
+                                  <td>fin-aws (Test)</td>
+                                  <td>Harshit Singhal</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>BioHoldingInc</td>
+                                    <td>Finance</td>
+                                    <td>Aws</td>
+                                    <td>fin-aws (Test)</td>
+                                    <td>Harshit Singhal</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>BioHoldingInc</td>
+                                    <td>Finance</td>
+                                    <td>Aws</td>
+                                    <td>fin-aws (Test)</td>
+                                    <td>Harshit Singhal</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>BioHoldingInc</td>
+                                    <td>Finance</td>
+                                    <td>Aws</td>
+                                    <td>fin-aws (Test)</td>
+                                    <td>Harshit Singhal</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="orgEnvironment">
+                    <div class="org-environment-row">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="org-environment-left">
+                              <div class="download-btn">
+                                <a routerLink="/add-project-environment"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a>
+                                <button><i class="fa fa-download" aria-hidden="true"></i>Export to CSV</button>
+                                <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Export to PDF</button>
+                                <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                              </div>
+                              <div class="serch-box">
+                                <input type="text" placeholder="Text..">
+                                <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="org-environment-list">
+                          <div class="fix-table-header" id="table-cont">
+                            <table class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                                  <th>Name</th>
+                                  <th>Alias</th>
+                                  <th>Type</th>
+                                  <th>Description</th>
+                                  <th style="text-align: center;">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td>Dev</td>
+                                    <td>Development</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>Development</td>
+                                  <td>Dev</td>
+                                  <td>Development</td>
+                                  <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                  <td>
+                                    <div class="user-action">
+                                      <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Development</td>
+                                    <td>Dev</td>
+                                    <td>Development</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Development</td>
+                                    <td>Dev</td>
+                                    <td>Development</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>Development</td>
+                                    <td>Dev</td>
+                                    <td>Development</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                    <td>
+                                      <div class="user-action">
+                                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-footer"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+<app-footer></app-footer>

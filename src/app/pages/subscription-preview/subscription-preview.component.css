@@ -1,0 +1,8 @@
+.subs-preview { position: relative; max-width: 95%; margin:0 auto; padding:10px 40px 20px 40px; margin-top: 40px; box-shadow: 0 0 2px rgba(0, 0,0,0.3); border-radius: 2px; min-height: 770px; max-height: 770px; overflow: auto;}
+.subs-preview .subss-cnt { position: relative; width: 100%;}
+.subs-preview .subss-cnt h2 { font-size: 24px; padding:10px; background: #ecf0f3; margin:25px 0; border: 1px solid #ecf0f3; border-left: none; border-right: none; }
+.subs-preview .subss-cnt p { padding:10px; border: 1px solid #ecf0f3; font-size: 18px; border-radius: 2px; margin-bottom: 20px;}
+.subs-preview .subss-cnt p span { font-weight: 600; padding-right:10px; border-right: 1px solid #cbcbcb; margin-right: 10px;}
+.subs-preview .subss-cnt.mid p span { border-right: 0; margin-right: 0; padding-right: 0;}
+.subs-preview .subss-cnt .user-bx { padding:15px 15px 5px 15px; box-shadow: 0 0 2px rgba(0,0,0,0.3); margin-bottom: 15px;}
+.subs-preview .subss-cnt .user-bx p { margin-bottom: 10px; }

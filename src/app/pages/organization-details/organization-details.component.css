@@ -1,0 +1,8 @@
+.barBox{
+    background-color: white;
+}
+
+.organization-detail-chart-wrapper canvas{
+    height:280px!important;
+    width:70%!important;
+}

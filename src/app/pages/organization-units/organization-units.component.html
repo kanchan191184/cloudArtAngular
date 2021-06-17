@@ -1,0 +1,203 @@
+<app-header></app-header>
+  <div class="inner-body">
+    <app-sidebar-menu></app-sidebar-menu>
+    <div class="container-fluid">
+      <div class="breadcramb-nav">
+        <ul>
+          <li><a routerLink="/dashboard">Home</a></li>
+          <li><span>Organization Units</span></li>
+        </ul>
+      </div>
+      <div class="body-content">
+        <div class="organization-heading">
+          <h2>Organization Units</h2>
+        </div>
+        <div class="organization-detail">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="organization-dtl-left">
+                <div class="download-btn">
+                  <a routerLink="/add-organization"><button><i class="fa fa-plus" aria-hidden="true"></i>Add</button></a>
+                  <button><i class="fa fa-download" aria-hidden="true"></i>Export to CSV</button>
+                  <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Export to PDF</button>
+                  <button><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</button>
+                </div>
+                <div class="serch-box">
+                  <input type="text" placeholder="Text..">
+                  <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="organization-box">
+            <div class="fix-table-header" id="table-cont">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th style="width: 20px; padding: 7px 1px;">S.No.</th>
+                    <th>OU Name</th>
+                    <th>OU Admin</th>
+                    <th>Deployed on</th>
+                    <th>Allocation Date</th>
+                    <th>Total Allocation</th>
+                    <th>Total Cost</th>
+                    <th style="text-align: center;">Manage Projects</th>
+                    <th style="text-align: center;">Invoices</th>
+                    <th style="text-align: center;">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td></td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>DevEnvOU</td>
+                    <td>ManpreetSingh</td>
+                    <td>AWS,Azure</td>
+                    <td>09/06/2020</td>
+                    <td>$10006</td>
+                    <td>$00</td>
+                    <td style="text-align: center;"><a routerLink="/manage-project" class="project"><i class="fa fa-cog" aria-hidden="true"></i> Projects</a></td>
+                    <td style="text-align: center;"><a routerLink="/organization-invoices" class="invoices"><i class="fa fa-files-o" aria-hidden="true"></i> Invoices</a></td>
+                    <td>
+                      <div class="user-action">
+                        <button type="button" class="edit" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="delete" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-10 ml-2 mt-2" style="margin-top:5px;">
+            <p style="font-weight:600;">Showing 10 items</p>
+          </div>
+        <div class="col-md mt-2" style="margin-top:5px;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
