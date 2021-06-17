@@ -67,7 +67,7 @@ const routes: Routes = [
   { path: 'project-details', component: ProjectDetailsComponent },
   { path: 'projectenvironment', component: ProjectenvironmentComponent },
   { path: 'stepper', component: StepperComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   // {path: '**', redirectTo: '/dashboard'},
 ];
 
